@@ -21,7 +21,7 @@ function findMode(arr){
     let count = 0;
     let mostFrequent;
 
-    for(let key in frequencyCounter){
+    for(let key in freqCounter){
         if(freqCounter[key] > count){
             mostFrequent = key;
             count = freqCounter[key];
@@ -62,14 +62,14 @@ function findMode(arr){
  function findMedian(nums){
     nums.sort((a,b) => a - b);
 
-    let middleIndex = Math.floor(nums.length /2);
+    let middleIndex = Math.floor(nums.length / 2);
     let median;
     if (nums.length % 2 === 0) {
         median = (nums[middleIndex] + nums[middleIndex - 1]) / 2;
       } else {
         median = nums[middleIndex];
       }
-      return median
+      return median;
 
  }
 
